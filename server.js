@@ -24,7 +24,7 @@ app.use('/api/productos', routeProductos);
 app.use('/api/carrito', routeCarrito);
 app.get('/', (req, res) => {
 	const data = {
-		port: process.env.PORT,
+		port: port,
 		mode: process.env.MODE,
 		db: process.env.INSTANCIA,
 	};
